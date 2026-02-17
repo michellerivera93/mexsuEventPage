@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My WEB101 Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@100..900&display=swap');
+    </style>
+  </head>
+  
+  <body>
+    <div id="site-wrapper">
+      <header>
+        <img id="mexsu-img" src="./img/mexsu.png" alt="MexSU Logo"/>
+        <h2>Mexican Student Union</h2>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#past-events">Past Events</a></li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+            <li><button id="reduce-motion-button">Reduce Motion</button></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <div class="hero-title">
+        <h1>MEXSU Food Fest</h1>
+      </div>
+  
+      <div class="container">
+        <h2 id="taste">"A Taste of Mexico"</h2>
+        <div class="button-group">
+          <a href="#rsvp">
+            <button type="button">Sign up</button>
+          </a>
+            <button onclick="window.location.href='https://open.spotify.com/playlist/7ENzfudREcpmHERCssxm2l?si=mHQQu4A7ShCDYla8lYg1lA&pi=VfhSAX3ZQn-BJ&nd=1&dlsi=e7e00cebb37040c0'">Add to our Playlist</button>
+        </div>
+      </div>      
+            
+        <h2 id="about">About the Event</h2>
+    <p>
+      Join us for an exciting and immersive culinary experience at MEXSU's Food Fest, where we’ll take you on 
+      a flavorful journey through the rich and vibrant tastes of Mexico! 
+      This event celebrates the diverse and delicious flavors of Mexican cuisine, 
+      featuring hands-on food stations where you can create your own tacos, esquites, and more. 
+      Whether you're a seasoned foodie or new to Mexican dishes, this event offers something for everyone to enjoy!
+    </p>
+
+    <h3>What to Expect</h3>
+    <h4>A celebration of culture, flavor, and community.</h4>
+    <ul>
+      <li><b>😋 Authentic Street Food</b> <i> Visit all of our stations to get a taste of the delicious street food of Mexico!</i></li>
+      <li><b>🎶 Live music</b> <i>Enjoy curated playlists and win prizes throughout the event.</i></li> 
+      <li><b>🧃 Chill space to connect:</b> <i>Hang out with friends and meet new people</i></li>
+    </ul>
+  
+    <h2 id="schedule">Event Schedule</h2>
+
+    <div class="schedule-container">
+      <div class="schedule-item">
+        <img alt="Activity 1" src="./img/Esquites.png"/>
+        <div class="schedule-text">
+          <h3>Esquite Station</h3>
+          <p>Make your own esquite- a cup of corn with your chocie of toppings (cheese, mayonnaise, lime juice, chilli powder, and even Hot Cheetos)!</p>
+        </div>
+      </div>
+    
+      <div class="schedule-item">
+        <img alt="Tacos" src="./img/tacos.png"/>
+        <div class="schedule-text">
+          <h3>Taco Station</h3>
+          <p>Build yummy tacos with your choice of meat and toppings. We will have tacos de rez, barbacoa, and tacos al pastor!</p>
+        </div>
+      </div>
+    
+      <div class="schedule-item">
+        <img alt="Mangonada" src="./img/mangonada.png"/>
+        <div class="schedule-text">
+          <h3>Mangonada Station</h3>
+          <p>Enjoy this sweet and spicy shaved ice drink prepared with fruit and chamoy!</p>
+        </div>
+      </div>
+    </div>    
+
+    <div id="rsvp"></div>
+      <h2>RSVP</h2>
+      <p id="rsvp-count">📪 3 people have RSVP'd to this event!</p>
+
+      <div class="rsvp-container">
+        <div class="rsvp-para">
+          <p>Want to join us for tacos, mangonadas, and more? RSVP below to save your spot at MEXSU Food Fest!</p>
+        </div>
+
+        <div class="rsvp-participants">
+          <p>🇲🇽 Jocelyn, who loves conchas, RSVP'd.</p>
+          <p>🇲🇽 Alexa, who loves esquites, RSVP'd.</p>
+          <p>🇲🇽 Alma, who loves elotes, RSVP'd </p>
+        </div>
+      </div>
+      
+      <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+
+          <label for="email">Hunter Email:</label>
+          <input type="email" id="email" required>
+
+          <label for="snack">Favorite Snack:</label>
+          <input type="text" id="snack" required>
+
+          <input type="submit" value="Submit RSVP">
+        </form>
+      </div>
+    </div>
+
+
+    <div id="success-modal" class="modal">
+      <div class="modal-container">
+        <div class="modal-item">
+          <p id="modal-text">Thanks for RSVPing! 🎉</p>
+          <button id="close-modal-button">Close</button>
+        </div>
+        <div class="modal-item">
+          <img id="modal-image" src="./img/pinata.gif" alt="Success celebration">
+        </div>
+      </div>
+    </div> 
+    
+    <footer>
+      <p>&copy; 2025 Mexican Student Union at Hunter College</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
